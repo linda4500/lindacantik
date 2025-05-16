@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JALASA HOTEL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "icon" href = "https://i.pinimg.com/736x/6c/53/2b/6c532b6212c6ee698f382e9ff9927a25.jpg" type = "jpg">
+  </head>
+  <body>
+
+    <!-- header -->
+     <header class = "header" id = "header">
+      <div class = "head-top">
+        <div class = "site-name">
+          <span>JALASA</span>
+        </div>
+      </div>
+      <div class = "site-nav">
+        <span id= "nav-btn">MENU <i class = "icon" >&#9776;</i></span>
+      </div>
+
+   
+      <div class = "head-bottom flex">
+        <h2>JALASA HOTEL</h2>
+        <P>Hotel Bertema Harry Potter</P>
+        <button type = "button" class = "head-btn">MULAI</button>
+      </div>
+     </header>
+    <!-- end of header -->
+
+    <!-- side navbar -->
+     <div class = "sidenav" id = "sidenav">
+      <span class = "cancel-btn" id = "cancel-btn">
+        <div style="font-size: 30px; color: rgb(255, 255, 255);">&times;</div>
+      </span>
+
+      <ul class = "navbar">
+        <li><a href ="#header">Beranda</a></li>
+        <li><a href ="#services">Layanan</a></li>
+        <li><a href ="#rooms">Kamar</a></li>
+        <li><a href ="#customers">Pelanggan</a></li>
+      </ul>
+      <button class = "btn sign-up">Daftar</button>
+      <button class = "btn log-in">Masuk</button>
+     </div>
+    <!-- end of side navbar -->
+     
+    <!-- fullscreen modal -->
+     <div id = "modal"></div>
+    <!-- end fullscreen modal -->
+
+    <!-- body content -->
+     <section class = "services sec-width" id = "services">
+      <div class = "title">
+        <h2>Layanan</h2>
+      </div>
+      <div class = "services-container">
+        <!-- single service -->
+          <article class = "service">
+          <div class = "service-icon">
+            <i style="font-size: 30px;">🍴</i>
+          </div>
+          <div class = "service-content">
+            <h2>Layanan Makanan/Pengantar Makanan</h2>
+            <p>Rasakan pengalaman bersantap pribadi dengan layanan makanan ke kamar kami, di mana setiap hidangan disiapkan dengan bahan terbaik dan diantarkan hangat, hanya untuk Anda.</p>
+            <button type = "button" class = "btn">Pelajari Lebih Lanjut</button>
+          </div>
+         </article>
+        <!-- end single service -->
+        <!-- single service -->
+         <article class = "service">
+          <div class = "service-icon">
+            <i style="font-size: 30px;">🏊‍♀️</i>
+          </div>
+          <div class = "service-content">
+            <h2>Penyegaran</h2>
+            <p>Nikmati momen menyegarkan di kolam renang kami yang dirancang untuk kenyamanan dan relasasi, dikelilingi suasana tenang dan pemandangan menawan.</p>
+            <button type = "button" class = "btn">Pelajari Lebih Lanjut</button>
+          </div>
+         </article>
+        <!-- end single service -->
+         <!-- single service -->
+         <article class = "service">
+          <div class = "service-icon">
+            <i style="font-size: 30px;">🧹</i>
+          </div>
+          <div class = "service-content">
+            <h2>Layanan Kebersihan Kamar</h2>
+            <p>Untuk memastikan kenyamanan dan kebersihan selama Anda menginap, layanan kebersihan kamar kami hadir setiap hari dengan perhatian pada detail dan standar kebersihan tinggi, menjaga kamar Anda tetap rapi, segar, dan siap menyambut Anda kapan saja.</p>
+            <button type = "button" class = "btn">Pelajari Lebih Lanjut</button>
+          </div>
+         </article>
+        <!-- end single service -->
+         <!-- single service -->
+         <article class = "service">
+          <div class = "service-icon">
+            <i style="font-size: 30px;">🔐</i>
+          </div>
+          <div class = "service-content">
+            <h2>Keamanan Ruangan</h2>
+            <p>Keselamatan dan privasi Anda adalah prioritas utama kami. Setiap kamar di hotel kami dirancang dengan sistem keamanan terkini, termasuk kunci pintu elektronik yang hanya dapat diakses oleh tamu terdaftar, brankas pribadi untuk menyimpan barang berharga, serta sistem pengawasan 24 jam di area publik demi memastikan lingkungan yang aman dan nyaman selama Anda menginap.</p>
+            <button type = "button" class = "btn">Pelajari Lebih Lanjut</button>
+          </div>
+         </article>
+        <!-- end single service -->
+      </div>
+     </section>
+
+       <div class = "book">
+        <form class = "book-form">
+          <div class = "form-item">
+            <label for="checkin-date">Tanggal Check-in: </label>
+           <input type="date" id="checkin-date">
+          </div>
+       <div class = "form-item">
+        <label for="checkout-date">Tanggal Check-out: </label>
+  <input type="date" id="checkout-date">
+       </div>
+      <div class = "form-item">
+        <label for="adult">Jumlah Dewasa: </label>
+  <input type = "number" id = "adult" min = "1" value = "1">
+      </div>
+      <div class = "form-item">
+        <label for="children">Jumlah Anak: </label>
+  <input type = "number" id = "children" min="0" value = "0">
+      </div>
+      <div class = "form-item">
+        <label for="rooms">Jumlah Kamar: </label>
+  <input type = "number" id = "rooms" min = "1" value = "1">
+      </div>
+      <!-- Jumlah Kamar end -->
+      <div class = "form-item">
+        <input type = "submit" class = "btn" value = "Pesan Sekarang">
+      </div>
+
+       <section class = "rooms sec-width" id = "rooms">
+        <div class = "title">
+          <h2>Kamar</h2>
+        </div>
+        <div class = "rooms-container">
+          <!-- single room -->
+           <article class = "room">
+            <div class = "room-image">
+            <img src = "gryffindorroom.jpg" alt = "room image">
+          </div>
+          <div class = "room-text">
+            <h3>Gryffindor Room</h3>
+            <p>Berani mencoba pengalaman menginap di kamar Gryffindor? Temukan suasana kastil, tirai merah maroon, bantal bersulam singa, dan sentuhan sihir di setiap sudut. Cocok untuk para Potterhead sejati.</p><br>
+            <p>Fasilitas Kamar:</p>
+
+            <ul>
+              <li>3 Single bed</li>
+              <li>Dekorasi Dinding Bertema Kastil</li>
+              <li>AC</li>
+              <li>Kamar Mandi</li>
+              <li>Kulkas</li>
+              <li>Televisi</li>
+              <li>Ruang Penyimpanan</li><br>
+            </ul>
+            <p class = "rate">
+              <span>Rp1.200.000 /</span>Per Malam
+            </p>
+            <button type = "button" class = "btn">Pesan Sekarang</button><br>
+          </div>
+           </article>
+           <!-- single room end -->
+
+         <!-- single room -->
+           <article class = "room">
+            <div class = "room2">
+            <img src = "hufflepuffroom.jpg" alt = "room image">
+          </div>
+          <div class = "room-text">
+            <h3>Hufflepuff Room</h3>
+            <p>Temukan kenyamanan sejati di kamar Hufflepuff kamu dengan ruang yang hangat, bersahaja, dan ramah. Cocok bagi jiwa-jiwa yang setia dan penuh kebaikan dengan nuansa kuning cerah, dekorasi alami, dan suasana damai ala asrama bawah tanah Hogwarts, dengan memesan kamar ini akan membuat Anda merasa seperti di rumah.</p><br>
+            <p>Fasilitas Kamar:</p>
+
+            <ul>
+              <li>2 single Bed</li>
+              <li> Kamar Mandi</li>
+              <li>AC</li>
+              <li>Kulkas</li>
+              <li>Televisi</li>
+              <li>Ruang Penyimpanan</li>
+              <li>Dekorasi Hangat</li>
+              <li>Meja Kecil</li>
+            </ul><br>
+            <p class = "rate">
+              <span>Rp850.000 /</span>Per Malam
+            </p>
+            <button type = "button" class = "btn">Pesan Sekarang</button><br>
+          </div>
+           </article>
+           <!-- single room end -->
+
+           <!-- single room -->
+           <article class = "room">
+            <div class = "room3">
+            <img src = "slytherinroom.jpg" alt = "room image">
+          </div>
+          <div class = "room-text">
+            <h3>Slytherin Room</h3>
+            <p>Dengan memasuki kamar Slytherin dengan kamar yang memancarkan kemewahan gelap dan keanggunan rahasia. Dengan nuansa hujau, pencahayaan temaram, dan dekorasi bergaya bawah tanah kastil, kamar ini dirancang untuk jiwa-jiwa ambisius yang tak takut menonjol .</p><br>
+            <p>Fasilitas Kamar:</p>
+
+            <ul>
+              <li>1 king Room</li>
+              <li>Kamar Mandi</li>
+              <li>AC</li>
+              <li>Interior Tematik</li>
+              <li>Televisi</li>
+              <li>Dekorasi Dinding Eksklusif</li>
+              <li>Lemari dengan kaca antik</li>
+              <li>Meja Kerja Bergaya Kastil</li>
+              <li>Kulkas</li>
+            </ul><br>
+            <p class = "rate">
+              <span>Rp800.000 /</span>Per Malam
+            </p>
+            <button type = "button" class = "btn">Pesan Sekarang</button><br>
+          </div>
+           </article>
+           <!-- single room end -->
+        </div>
+       </section>
+       
+       <section class = "customers" id = "customers">
+        <div class = "sec-width">
+          <div class = "title">
+          <h2>Pelanggan</h2>
+        </div><br> 
+        <div class = "customers-container">
+          <!-- single customer -->
+            <div class = "customer">
+            <div class = "rating">
+              <span>4,5/5</span>
+            </div>
+            <h3>Kita suka ini</h3>
+            <p>Dekorasinya luar biasa, detailnya benar-benar mirip asrama Gryffindor. Ini pengalaman menginap paling seru yang pernah saya coba.</p><br>
+            <img src = "https://i.pinimg.com/736x/88/bf/e5/88bfe5649cc3479ba612a9dadb705740.jpg" alt = "customer image">
+            <p>Sarah, Jakarta</p>
+            </div><br>
+          <!-- single customer end -->
+
+          <!-- single customer -->
+            <div class = "customer">
+            <div class = "rating">
+              <span>4,5/5</span>
+            </div>
+            <h3>Keren sekali</h3>
+            <p>Menginap di kamar Hufflepuff benar-benar seperti masuk ke dunia sihir! Dekorasinya hangat, nyaman, dan penuh detail yang mengingatkan saya pada asrama Hufflepuff di Hogwarts. Staf hotel sangat ramah dan pelayanannya luar biasa. Cocok banget untuk penggemar Harry Potter!.</p><br>
+            <img src = "https://i.pinimg.com/736x/11/01/1a/11011a3fca4e05195c77093e5bce5a57.jpg" alt = "customer image">
+            <p>Johanes, Depok</p>
+            </div><br>
+          <!-- single customer end -->
+
+          <!-- single customer -->
+            <div class = "customer">
+            <div class = "rating">
+              <span>4,5/5</span>
+            </div>
+            <h3>Wahh, bakal dateng lagi si inii</h3>
+            <p>Menginap di kamar Hufflepuff benar-benar seperti masuk ke dunia sihir! Dekorasinya hangat, nyaman, dan penuh detail yang mengingatkan saya pada asrama Hufflepuff di Hogwarts. Staf hotel sangat ramah dan pelayanannya luar biasa. Cocok banget untuk penggemar Harry Potter!.</p><br>
+            <img src = "https://i.pinimg.com/736x/81/cf/3d/81cf3d7ef054a03bcd60729dfa8478bf.jpg" alt = "customer image">
+            <p>mykella, Bogor</p>
+            </div><br>
+          <!-- single customer end -->
+          
+           </div>
+        </div>
+       </section>
+    <!-- body content end -->
+
+    <!-- footer -->
+     <footer class = "footer">
+      <div class = "footer-container">
+        <div>
+          <h2>Tentang Kami</h2>
+          <p>Selamat datang di Jalasa Hotel, tempat di mana dunia sihir menjadi nyata! Terinspirasi dari keajaiban dunia Harry Potter, hotel kami menghadirkan pengalaman menginap yang penuh pesona, misteri dan nuansa magis. Dari kamar yang menyerupai asrama gryffindor, hufflepuff hingga slytherin, setiap sudut dirancang untuk membangkitkan imajinasi Anda. Kami tidak hanya menawarkan tempat beristirahat, tapi juga petualangan, karena setiap tamu adalah penyihir istimewa dalam hotel kami.</p>
+          <ul class = "social-icons">
+            <li class = "flex">
+              <i class="fa fa-twitter" style="font-size:24px"></i>
+            </li>
+            <li class = "flex">
+              <i class="fa fa-facebook-f" style="font-size:24px"></i>
+            </li>
+            <li class = "flex">
+              <i class="fa fa-instagram" style="font-size:24px"></i>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+        <h2>Tautan yang Berguna</h2>
+        <a href = "#">Artikel</a>
+        <a href = "#">Kamar</a>
+        <a href = "#">Berlangganan</a>
+        <a href = "#">Kartu hadiah</a>
+        </div>
+
+      <div>
+        <h2>Kebijakan Privasi</h2>
+        <a href = "#">Karier</a>
+        <a href = "#">Tentang Kami</a>
+        <a href = "#">Hubungi Kami</a>
+        <a href = "#">Layanan</a>
+        </div>
+
+        <div>
+          <h2>Punya Pertanyaan?</h2>
+          <div class = "contact-item">
+            <span>
+              Jl. Margonda Raya No.100, Depok, Jawa Barat
+            </span>
+          </div>
+          <div class = "contact-item">
+            <span>
+              (021) 1234 5678
+            </span>
+          </div>
+          <div class = "contact-item">
+            <span>
+                info@Jalasahotel.com 
+            </span>
+          </div>
+        </div>
+
+        </div>
+     </footer>
+
+      
+  
+
+
+     <script src="script.js"></script>
+
+  </body>
+</html>
